@@ -7,6 +7,9 @@ var create = (function() {
     addEventListener: function(event, fn) {
       this.element.addEventListener(event, fn, true);
       return this;
+    },
+    build: function() {
+      return this.element;
     }
   };
 
